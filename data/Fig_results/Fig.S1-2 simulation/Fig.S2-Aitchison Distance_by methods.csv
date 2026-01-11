@@ -1,0 +1,206 @@
+"methods","tissue_spiked","aitchison_median"
+"10% detect","adipocyte",0.635420107539771
+"10% detect","artery",0.44297305029842
+"10% detect","bladder",0.472145959189058
+"10% detect","bone",0.452054523631795
+"10% detect","bowel",0.648080533488043
+"10% detect","brain",0.358577606422616
+"10% detect","heart",0.390704729423234
+"10% detect","kidney",0.58483223861757
+"10% detect","liver",0.338011150826072
+"10% detect","lung",0.815566787434874
+"10% detect","lymph node",0.561735756756547
+"10% detect","nerve",0.714172527332303
+"10% detect","pancreas",0.524322375060707
+"10% detect","salivary gland",0.532288549724781
+"10% detect","skin",0.392709836680066
+"10% detect","spleen",0.69686487793671
+"10% detect","stomach",0.87826800130857
+"50% detect","adipocyte",0.688764821487299
+"50% detect","artery",0.528582726862519
+"50% detect","bladder",0.480381388491429
+"50% detect","bone",0.486240223849114
+"50% detect","bowel",0.702372029136513
+"50% detect","brain",0.381435478130681
+"50% detect","heart",0.451212653804569
+"50% detect","kidney",0.668405966462231
+"50% detect","liver",0.316628201190858
+"50% detect","lung",0.869150256523332
+"50% detect","lymph node",0.610935757198475
+"50% detect","nerve",0.906893100408722
+"50% detect","pancreas",0.646629301204545
+"50% detect","salivary gland",0.573762811767536
+"50% detect","skin",0.468776152563286
+"50% detect","spleen",0.815224671940556
+"50% detect","stomach",0.876679355357584
+"80% detect","adipocyte",0.678795165029599
+"80% detect","artery",0.514638913366145
+"80% detect","bladder",0.485668154949069
+"80% detect","bone",0.500080863113075
+"80% detect","bowel",0.740236095691662
+"80% detect","brain",0.371004835236068
+"80% detect","heart",0.270770282899182
+"80% detect","kidney",0.724347029220935
+"80% detect","liver",0.318395139129787
+"80% detect","lung",0.92074318050634
+"80% detect","lymph node",0.617436594232307
+"80% detect","nerve",1.05097633033032
+"80% detect","pancreas",0.680974119721973
+"80% detect","salivary gland",0.546525151860839
+"80% detect","skin",0.417974361974384
+"80% detect","spleen",0.868883336708847
+"80% detect","stomach",0.929193716799415
+"AutoGeneS","adipocyte",0.750521907531028
+"AutoGeneS","artery",0.584569757268474
+"AutoGeneS","bladder",0.610292024588219
+"AutoGeneS","bone",0.797536391884869
+"AutoGeneS","bowel",0.966321311612801
+"AutoGeneS","brain",0.0921049374742014
+"AutoGeneS","heart",0.508084241008915
+"AutoGeneS","kidney",0.231825347092034
+"AutoGeneS","liver",0.0972435758865166
+"AutoGeneS","lung",0.82270972658301
+"AutoGeneS","lymph node",0.48442213784402
+"AutoGeneS","nerve",1.91485438951012
+"AutoGeneS","pancreas",0.141910253359944
+"AutoGeneS","salivary gland",0.278178554899534
+"AutoGeneS","skin",0.202729106992391
+"AutoGeneS","spleen",0.326502619776587
+"AutoGeneS","stomach",2.67145382064468
+"MCP-counter","adipocyte",1.07382841955091
+"MCP-counter","artery",1.10895359774864
+"MCP-counter","bladder",0.9030320793258
+"MCP-counter","bone",1.40262825810082
+"MCP-counter","bowel",1.23695106340952
+"MCP-counter","brain",1.00220925525532
+"MCP-counter","heart",0.983570412881154
+"MCP-counter","kidney",1.07304131416382
+"MCP-counter","liver",1.00870854521513
+"MCP-counter","lung",1.40095873714719
+"MCP-counter","lymph node",0.737608923915705
+"MCP-counter","salivary gland",1.93892094661375
+"MCP-counter","skin",2.40094921773003
+"MCP-counter","spleen",2.48547221007099
+"RLE","adipocyte",0.675132019254255
+"RLE","artery",0.649969919939517
+"RLE","bladder",0.608739802792355
+"RLE","bone",0.529285394357983
+"RLE","bowel",0.669511368139683
+"RLE","brain",0.428261821342465
+"RLE","heart",0.461432903228659
+"RLE","kidney",0.670524841883218
+"RLE","liver",0.452794189444168
+"RLE","lung",0.593218456021369
+"RLE","lymph node",0.60565456982414
+"RLE","nerve",0.854644144481969
+"RLE","pancreas",0.588159082652719
+"RLE","salivary gland",0.573324599520052
+"RLE","skin",0.411771899991123
+"RLE","spleen",0.82823776756515
+"RLE","stomach",1.01445218116889
+"RNAAtlas","adipocyte",0.514541868925623
+"RNAAtlas","bladder",0.466163908871768
+"RNAAtlas","bowel",0.574884575659314
+"RNAAtlas","brain",0.369187756013465
+"RNAAtlas","heart",0.446853600925407
+"RNAAtlas","kidney",0.584393722654707
+"RNAAtlas","liver",0.526551803051749
+"RNAAtlas","lung",0.447215121186074
+"RNAAtlas","lymph node",0.467224938512739
+"RNAAtlas","pancreas",0.468921403409025
+"RNAAtlas","spleen",0.570886016618929
+"RNAAtlas","stomach",0.671091590258407
+"AutoGeneS-sig","adipocyte",1.05486916582686
+"AutoGeneS-sig","artery",0.731660251247571
+"AutoGeneS-sig","bladder",0.806412986092815
+"AutoGeneS-sig","bone",0.684477567718205
+"AutoGeneS-sig","bowel",0.988353488834683
+"AutoGeneS-sig","brain",0.515948581699482
+"AutoGeneS-sig","heart",0.572788031507433
+"AutoGeneS-sig","kidney",1.09964379141382
+"AutoGeneS-sig","liver",0.333844360985465
+"AutoGeneS-sig","lung",0.770902220701917
+"AutoGeneS-sig","lymph node",0.609351762874137
+"AutoGeneS-sig","nerve",1.52974216503079
+"AutoGeneS-sig","pancreas",0.821718383703694
+"AutoGeneS-sig","salivary gland",0.834394971925249
+"AutoGeneS-sig","skin",0.441400494079673
+"AutoGeneS-sig","spleen",1.21682542500889
+"AutoGeneS-sig","stomach",1.13510775992993
+"CIBERSORT-sig","adipocyte",0.725869593000561
+"CIBERSORT-sig","artery",0.630198590327898
+"CIBERSORT-sig","bladder",1.07766503592646
+"CIBERSORT-sig","bone",0.610140129523212
+"CIBERSORT-sig","bowel",1.01852255521002
+"CIBERSORT-sig","brain",0.450896973452345
+"CIBERSORT-sig","heart",0.623036722707406
+"CIBERSORT-sig","kidney",0.635973525016179
+"CIBERSORT-sig","liver",0.482439710194786
+"CIBERSORT-sig","lung",0.848070935456213
+"CIBERSORT-sig","lymph node",1.17940784721234
+"CIBERSORT-sig","nerve",0.767010993591366
+"CIBERSORT-sig","pancreas",0.655969994933029
+"CIBERSORT-sig","salivary gland",0.577035454446916
+"CIBERSORT-sig","skin",0.667607406556445
+"CIBERSORT-sig","spleen",1.03286859716124
+"CIBERSORT-sig","stomach",0.666990446558792
+"Source-provided","adipocyte",0.55339647865054
+"Source-provided","bladder",1.20464599752084
+"Source-provided","bone",0.59074684839937
+"Source-provided","bowel",1.16808286534766
+"Source-provided","brain",0.305196641065614
+"Source-provided","heart",0.463719462885172
+"Source-provided","kidney",1.09346207814964
+"Source-provided","liver",0.402838615667528
+"Source-provided","nerve",0.510697923228571
+"Source-provided","pancreas",0.259944071943491
+"Source-provided","skin",0.311505725316708
+"Source-provided","spleen",0.587284286638937
+"Source-provided","stomach",1.12495060922109
+"TSI>0.9","adipocyte",0.509776554460959
+"TSI>0.9","bladder",1.25093405789705
+"TSI>0.9","bone",0.611941506441808
+"TSI>0.9","bowel",1.15021504066071
+"TSI>0.9","brain",0.277350914041031
+"TSI>0.9","heart",0.51559996641054
+"TSI>0.9","kidney",1.10529700796858
+"TSI>0.9","liver",0.456388039723483
+"TSI>0.9","nerve",0.546641436892855
+"TSI>0.9","pancreas",0.286221452303277
+"TSI>0.9","skin",0.307396916098865
+"TSI>0.9","spleen",0.590743508025184
+"TSI>0.9","stomach",1.10369439899179
+"miR-TS selected","adipocyte",0.662721211694938
+"miR-TS selected","artery",0.461493311148172
+"miR-TS selected","bladder",0.47297727191315
+"miR-TS selected","bone",0.447208438364196
+"miR-TS selected","bowel",0.647001367741917
+"miR-TS selected","brain",0.375305620474467
+"miR-TS selected","heart",0.358286552505167
+"miR-TS selected","kidney",0.59612766656104
+"miR-TS selected","liver",0.318215048161947
+"miR-TS selected","lung",0.779910672476362
+"miR-TS selected","lymph node",0.530568462612069
+"miR-TS selected","nerve",0.766007468737611
+"miR-TS selected","pancreas",0.56874787298209
+"miR-TS selected","salivary gland",0.526559551134427
+"miR-TS selected","skin",0.388552457563302
+"miR-TS selected","spleen",0.712902459565756
+"miR-TS selected","stomach",0.793657222027121
+"xCell2","adipocyte",3.86045138253792
+"xCell2","artery",9.65420641360809
+"xCell2","bladder",4.11830869865355
+"xCell2","bone",4.11252424257375
+"xCell2","bowel",1.01416564167119
+"xCell2","brain",0.670127386616539
+"xCell2","heart",0.849394159518663
+"xCell2","kidney",29.1809666184241
+"xCell2","liver",1.24271265660052
+"xCell2","lung",5.82136987546857
+"xCell2","lymph node",34.2923853405251
+"xCell2","nerve",4.29847076462558
+"xCell2","pancreas",33.4627984987113
+"xCell2","salivary gland",2.81166141426365
+"xCell2","skin",30.3365886469939
+"xCell2","spleen",5.24983900738017
+"xCell2","stomach",4.75074502623169

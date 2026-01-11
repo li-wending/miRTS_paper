@@ -1,0 +1,15 @@
+"strata","time","surv","event","n.risk","n.event","n.censor"
+"brain_change_prop.bi=FALSE",2,1,0,207,0,15
+"brain_change_prop.bi=FALSE",3,1,0,192,0,118
+"brain_change_prop.bi=FALSE",4,0.987545372416993,0.0124546275830069,74,3,40
+"brain_change_prop.bi=FALSE",5,0.987545372416993,0.0124546275830069,31,0,8
+"brain_change_prop.bi=FALSE",6,0.987545372416993,0.0124546275830069,23,0,9
+"brain_change_prop.bi=FALSE",7,0.953825117855124,0.0461748821448759,14,1,10
+"brain_change_prop.bi=FALSE",8,0.953825117855124,0.0461748821448759,3,0,2
+"brain_change_prop.bi=FALSE",10,0.953825117855124,0.0461748821448759,1,0,1
+"brain_change_prop.bi=TRUE",2,1,0,36,0,2
+"brain_change_prop.bi=TRUE",3,0.826949562565021,0.173050437434979,34,1,20
+"brain_change_prop.bi=TRUE",4,0.826949562565021,0.173050437434979,13,0,6
+"brain_change_prop.bi=TRUE",5,0.257425560875785,0.742574439124215,7,1,3
+"brain_change_prop.bi=TRUE",7,0.257425560875785,0.742574439124215,3,0,2
+"brain_change_prop.bi=TRUE",8,0.257425560875785,0.742574439124215,1,0,1
