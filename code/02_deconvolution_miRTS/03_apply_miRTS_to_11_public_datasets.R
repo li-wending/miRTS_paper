@@ -1,5 +1,5 @@
 #' This script shows how to apply the miRTS package to generate
-#'   miR-TS scores for 10 public datasets.
+#'   miR-TS scores for 11 public datasets.
 #' The scripts for plotting are provided separately
 #'   in `04_figure_generation\Fig3_validation using public datasets.R`
 #'
