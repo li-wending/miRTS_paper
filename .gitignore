@@ -53,3 +53,7 @@ rsconnect/
 # Logs / temp
 *.log
 *.tmp
+
+# other unnecessary redundant
+CIBERSORT-Results.txt
+tissue_list.use_17.rds
