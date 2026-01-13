@@ -1,12 +1,12 @@
-#
-library(dplyr)
-library(ggplot2)
-library(tibble)
+# Commonly used libraries:----
 library(reshape2)
-library(scales)  # For number_format()
+library(scales)
+library(ggplot2)
 library(ggpubr)
+library(dplyr)
+library(tibble)
 
-#Useful vectors:----
+#Useful vectors and datasets:----
 tissue_list.use_17 <- c(
   "adipocyte", "artery", "bladder", "bone", "bowel", "brain", "heart", "kidney",
   "liver", "lung", "lymph_node", "nerve", "pancreas", "salivary_gland",
@@ -16,6 +16,7 @@ tissue_list.use_17.rm_ <- gsub("_", " ", tissue_list.use_17) # underline sign re
 
 Plasma_miR.all.1_intersect.2 <-  read.csv("./data/other_data/miRNAs_detectable_in_plasma.csv")[[1]] # the list of plasma detectable miRNAS above 20%
 
+miR.alias <-  read.csv("./data/other_data/miR.alias.csv")
 
 # Useful functions:----
 #
@@ -88,4 +89,40 @@ theme_Publication <- function(base_size=14, base_family="helvetica") {
             strip.text = element_text(face="bold")
     ))
 
+}
+
+# merge miRTS output with meta data named as *.meta:
+Assign_miRTS_output <- function(Input_mix, miRTS.obj, convert_name=1){
+  result1_1 <- Transform_cibersort(as.data.frame(get(miRTS.obj)$proportions))
+  output_df <- result1_1 %>%
+    rownames_to_column("Col_names") %>%
+    # mutate(Col_names=as.numeric(Col_names)) %>%
+    mutate(Col_names=gsub("\\.", "-", Col_names)) %>%
+    inner_join(get(paste0(gsub("qc_TMMcpm.dtct.*", "", Input_mix), ".meta")) %>%
+                 # mutate(sample_type=day) %>%
+                 select(
+                   Col_names, sample_type
+                 )
+               , by="Col_names") %>%
+    column_to_rownames("Col_names") %>%
+    mutate(study=paste0(Input_mix, "__Abs"),
+           miR_using=nrow(deconv.res$mix) )
+  if (convert_name!=1){
+    output_df <- result1_1 %>%
+      rownames_to_column("Col_names") %>%
+      # mutate(Col_names=as.numeric(Col_names)) %>%
+      # mutate(Col_names=gsub("\\.", "-", Col_names)) %>%
+      inner_join(get(paste0(gsub("qc_TMMcpm.dtct.*", "", Input_mix), ".meta")) %>%
+                   # mutate(sample_type=day) %>%
+                   select(
+                     Col_names, sample_type
+                   )
+                 , by="Col_names") %>%
+      column_to_rownames("Col_names") %>%
+      mutate(study=paste0(Input_mix, "__Abs"),
+             miR_using=nrow(deconv.res$mix) )
+
+  }
+  print(table(output_df$sample_type))
+  output_df
 }

@@ -1,0 +1,62 @@
+Col_names,Sex,Age,Race,GCS,Timepoint,Injury Type,Subtype,Other injuries,Biofluid,Years from TBI
+BRH.1425633_S15,male,52,hispanic,ND,0 hr,Control ,ND,ND,CSF,ND
+BRH.1425634_S16,female,55,white,ND,0 hr,Control ,ND,ND,CSF,ND
+BRH.1386871,male,35,black,ND,0 hr,Control ,ND,ND,CSF,ND
+BRH.1386872,female,35,hispanic,ND,0 hr,Control ,ND,ND,CSF,ND
+BRH.1386873,female,27,hispanic,ND,0 hr,Control ,ND,ND,CSF,ND
+X12190,male,20,hispanic,10,24 hr,TBI,Diffuse,NO,CSF,ND
+X12104,male,29,hispanic,6,24 hr,TBI,Diffuse,YES,CSF,ND
+X12108,male,25,black,10,24 hr,TBI,Diffuse,YES,CSF,ND
+X12176,male,25,hispanic,8,24 hr,TBI,Diffuse,YES,CSF,ND
+X12256,male,23,white,7,24 hr,TBI,Focal,YES,CSF,ND
+BRH.1429984_S9,male,25,black,,0 hr,Control,ND,,Serum,ND
+BRH.1429985_S10,male,34,hispanic,,0 hr,Control,ND,,Serum,ND
+BRH.1429986_S11,male,28,hispanic,,0 hr,Control,ND,,Serum,ND
+BRH.1429987_S12,female,38,hispanic,,0 hr,Control,ND,,Serum,ND
+BRH.1429988_S13,female,38,hispanic,,0 hr,Control,ND,,Serum,ND
+BRH.1429989_S14,female,33,hispanic,,0 hr,Control,ND,,Serum,ND
+X1038.24h_S2,male,24,hispanic,8,24 hr,TBI,Diffuse,YES,Serum,ND
+X1052.24h_S3,male,54,white,3,24 hr,TBI,Diffuse,YES,Serum,ND
+X1108.24h_S4,ND,ND,ND,ND,24 hr,TBI,Focal,ND,Serum,ND
+X1141.24h_S5z,male,37,black,8,24 hr,TBI,Focal,YES,Serum,ND
+X1231.24h_S6z,male,23,white,7,24 hr,TBI,Focal,YES,Serum,ND
+X1242.24h_S7z,ND,ND,ND,ND,24 hr,TBI,Focal,ND,Serum,ND
+X1249.24h_S8z,female,51,white,6,24 hr,TBI,Focal,YES,Serum,ND
+X964.24h_S1,male,53,asian,3,24 hr,TBI,Focal,NO,Serum,ND
+X10018,male,31,black,8,24 hr,TBI,Diffuse,ND,Serum,ND
+X10050,female,22,hispanic,12,24 hr,TBI,Diffuse,ND,Serum,ND
+X1013,male,20,white,5,24 hr,TBI,Diffuse,ND,Serum,ND
+X1016,female,15,white,3,24 hr,TBI,Diffuse,ND,Serum,ND
+X1022,male,18,black,8,24 hr,TBI,Focal,ND,Serum,ND
+X1025,male,20,black,10,24 hr,TBI,Focal,ND,Serum,ND
+X1027,female,15,hispanic,13,24 hr,TBI,Focal,ND,Serum,ND
+X1028,male,37,hispanic,11,24 hr,TBI,Focal,ND,Serum,ND
+X9911,female,49,hispanic,7,24 hr,TBI,Focal,ND,Serum,ND
+X9931,ND,ND,ND,ND,24 hr,TBI,UNSURE,ND,Serum,ND
+X9961,ND,ND,ND,ND,24 hr,TBI,UNSURE,ND,Serum,ND
+X9993,male,52,white,8,24 hr,TBI,Focal,ND,Serum,ND
+X999,male,44,hispanic,6,24 hr,TBI,Focal,ND,Serum,ND
+X1038.48h_S18,male,24,hispanic,8,48 hr,TBI,Diffuse,YES,Serum,ND
+X1052.48h_S19,male,54,white,3,48 hr,TBI,Diffuse,YES,Serum,ND
+X1141.48h_S20z,male,37,black,8,48 hr,TBI,Focal,YES,Serum,ND
+X1231.48h_S21z,male,23,white,7,48 hr,TBI,Focal,YES,Serum,ND
+X1242.48h_S22z,ND,ND,ND,ND,48 hr,TBI,Focal,ND,Serum,ND
+X1249.48h_S23z,female,51,white,6,48 hr,TBI,Focal,YES,Serum,ND
+X964.48h_S17,male,53,asian,3,48 hr,TBI,Focal,NO,Serum,ND
+X1038.96h_S25,male,24,hispanic,8,96 hr,TBI,Diffuse,YES,Serum,ND
+X1052.96h_S26,male,54,white,3,96 hr,TBI,Diffuse,YES,Serum,ND
+X1231.96h_S27z,male,23,white,7,96 hr,TBI,Focal,YES,Serum,ND
+X1242.96h_S28z,ND,ND,ND,ND,96 hr,TBI,Focal,ND,Serum,ND
+X964.96h_S24,male,53,asian,3,96 hr,TBI,Focal,NO,Serum,ND
+X1592652_1,male,62,hispanic,ND,Chronic,Control,ND,ND,Serum,ND
+X1592653_2,male,55,black,ND,Chronic,Control,ND,ND,Serum,ND
+X1592654_3,male,58,black,ND,Chronic,Control,ND,ND,Serum,ND
+X1592655_4,female,56,hispanic ,ND,Chronic,Control,ND,ND,Serum,ND
+X1592656_5,female,61,black,ND,Chronic,Control,ND,ND,Serum,ND
+X1592657_6,female,57,black,ND,Chronic,Control,ND,ND,Serum,ND
+Aged_patient.1_S29,53,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,32
+Aged_patient.2_S30,51,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,28
+Aged_patient.3_S31,62,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,13
+Aged_patient.4_S32,69,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,10
+Aged_patient.5_S33,42,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,2
+Aged_patient.6_S34,59,ND,ND,ND,Chronic (>2yrs),TBI,ND,ND,Serum,
