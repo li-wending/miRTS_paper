@@ -5,13 +5,19 @@ library(tibble)
 library(reshape2)
 library(scales)  # For number_format()
 library(ggpubr)
-#
+
+#Useful vectors:----
 tissue_list.use_17 <- c(
   "adipocyte", "artery", "bladder", "bone", "bowel", "brain", "heart", "kidney",
   "liver", "lung", "lymph_node", "nerve", "pancreas", "salivary_gland",
   "skin", "spleen", "stomach"
 )
-tissue_list.use_17.rm_ <- gsub("_", " ", tissue_list.use_17)
+tissue_list.use_17.rm_ <- gsub("_", " ", tissue_list.use_17) # underline sign removed
+
+Plasma_miR.all.1_intersect.2 <-  read.csv("./data/other_data/miRNAs_detectable_in_plasma.csv")[[1]] # the list of plasma detectable miRNAS above 20%
+
+
+# Useful functions:----
 #
 Transform_cibersort <- function(result1_1) { # remove all 0 and pct_of_0 > 0.5 columns, replace the 0 with /2.
   result1_1 <- result1_1[, colSums(result1_1)!=0] %>% select(-any_of(c("P-value","Correlation", "RMSE")))

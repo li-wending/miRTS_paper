@@ -1,13 +1,14 @@
-# Create a signature matrix that include
-# marker miRNAs based on comparison with the avg of all other tissues,
-# not any individual tissue (not top1 or top3)
-
+# This script illustrates one instance of creating the optimal signature matrix
+# 1/7/2026
+source("./code/01_data_prep/00_loadbasicfunctions.R")
 library(edgeR)
-df_input = "TA2_miR.raw_qc" #TA2_miR.3_new2024.sel  TA2_miR.qc_cpm
+# import the raw data from TissueAtlas2:
+TA2_miR.raw <-  read.csv("./data/other_data/TA2_miR.raw.csv",row.names = 1)
 
-temp <- as.data.frame(t(as.data.frame( get(df_input) )))
+# keep only tissues with 3 or more replicates:
+temp <- as.data.frame(t(as.data.frame(TA2_miR.raw)))
 temp <- temp[! gsub("__.*","",rownames(temp)) %in% c(
-  #1
+  # 1
   "diaphragm", "glandular_breast_tissue",
   "prostate", "sclera", "urethra", "uterus"
   # 2
@@ -17,14 +18,13 @@ temp <- temp[! gsub("__.*","",rownames(temp)) %in% c(
 rownames(temp) <- gsub("submandibular_gland", "salivary_gland", rownames(temp))
 temp_input <- temp
 
+# Create meta data table:
 sampleID_organ <- data.frame(
   sampleID=rownames(temp_input),
   organ=gsub("__.*","",rownames(temp_input))
 )
 sort(table(sampleID_organ$organ))
 sampleID_organ.0 <- sampleID_organ
-
-tissue_using = "bladder"
 
 tissue_list <- c(
   "bladder", "lymph_node", "muscle", "salivary_gland", "pleurae", "spleen",
@@ -36,6 +36,7 @@ tissue_list <- c(
 marker_miR.compOthers <-
   data.frame()
 
+# tissue_using = "bladder"
 for (tissue_using in tissue_list){
 
   sampleID_organ <- sampleID_organ.0 %>%
@@ -100,25 +101,17 @@ marker_miR.compOthers.sel <-
   filter(DE>2 , FDR<0.2) # , DE_p<0.05)
 marker_miR.compOthers.sel <- marker_miR.compOthers.sel %>%
   filter(miRNA %in% gsub("_", "-", Plasma_miR.all.1_intersect.2))
-dim(marker_miR.compOthers.sel);  length(unique(marker_miR.compOthers.sel$miRNA))
+dim(marker_miR.compOthers.sel);  length(unique(marker_miR.compOthers.sel$miRNA)) # 257 miRNAs
+
+# Tissues identified as DE enriched:
 aa <- names(table(marker_miR.compOthers.sel$enriched_organ))
 tissue_list[!tissue_list %in% aa]
+# note how these four tissue types were not identified as enriched tissues in DE analysis,
+# but they are the top expressed tissues for some signature miRNAs,
+# all tissues were thus included to obtain robust enumeration of tissue signals:
+Signature <- TA2_tissue.TMM[unique(marker_miR.compOthers.sel$miRNA),]
 
-# marker_miR.compOthers.DE2.FDR.05__Plsm_union
-# marker_miR.compOthers.DE2.FDR.2__Plsm_union
-# marker_miR.compOthers.DE2.P.05__Plsm_union
-# marker_miR.compOthers.DE2.FDR.05__Plsm_intersect
-# marker_miR.compOthers.DE2.FDR.2__Plsm_intersect
-# marker_miR.compOthers.DE2.P.05__Plsm_intersect
-# marker_miR.compOthers.None__Plsm_intersect
+# The output signature matrix is same as the one in miRTS package:
+all.equal(miRTS::miRTS_signature_v1[, tissue_list.use_17],
+          Signature[, tissue_list.use_17])
 
-assign( "marker_miR.compOthers.DE2.FDR.2__Plsm_intersect.8",
-        list(Signature=
-               TA2_tissue.TMM[unique(marker_miR.compOthers.sel$miRNA),
-                              unique(marker_miR.compOthers.sel$enriched_organ)],
-             miR_organ=marker_miR.compOthers.sel) )
-all.equal(marker_miR.compOthers.DE2.FDR.2__Plsm_intersect.2,
-          list(Signature=
-                 TA2_tissue.TMM[unique(marker_miR.compOthers.sel$miRNA),
-                                unique(marker_miR.compOthers.sel$enriched_organ)],
-               miR_organ=marker_miR.compOthers.sel) )
