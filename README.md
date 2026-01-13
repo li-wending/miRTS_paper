@@ -15,7 +15,7 @@ all results and figures in the manuscript: "Circulating extracellular microRNAs 
 Raw sequencing data are being uploaded and the accession numbers will show up here; processed data are provided in the `data/` folder.
 
 ## Usage
-1. Install the miRTS R package
+1. Install the [miRTS](https://github.com/li-wending/miRTS/) R package
 2. Run scripts in `code/04_figure_generation`
 3. Run scripts in other subfolders under `code/` to explore benchmarking analysis and other miRTS functionality
 
