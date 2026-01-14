@@ -126,3 +126,11 @@ Assign_miRTS_output <- function(Input_mix, miRTS.obj, convert_name=1){
   print(table(output_df$sample_type))
   output_df
 }
+
+Sum_to_1 <- function(x) {
+  x <- as.numeric(x)
+  if (any(x < 0)) stop("Probabilities must be non-negative.")
+  s <- sum(x)
+  if (s == 0) stop("All entries are zero; cannot normalize.")
+  x / s
+}
