@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1129927920.svg)](https://doi.org/10.5281/zenodo.19446880)
 # miR-TS Manuscript
 
 This repository contains processed data and analysis code to reproduce
